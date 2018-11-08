@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,121 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Help_Screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delhi" translatesAutoresizingMaskIntoConstraints="NO" id="2n2-Ne-4st">
+                                <rect key="frame" x="18" y="110" width="339" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="Kfw-kb-oge"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Cities" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ari-g8-bwj">
+                                <rect key="frame" x="18" y="20" width="339" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="JKi-Wf-WOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mumbai" translatesAutoresizingMaskIntoConstraints="NO" id="cJB-b0-AAx">
+                                <rect key="frame" x="18" y="468" width="339" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="IBV-PE-pxE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indore" translatesAutoresizingMaskIntoConstraints="NO" id="Z9D-8E-1Rh">
+                                <rect key="frame" x="18" y="289" width="339" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="9WJ-Mz-PUh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.034939933329999999" green="0.61192519430000003" blue="0.20677426779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ari-g8-bwj" secondAttribute="trailing" constant="18" id="71n-AD-9Zd"/>
+                            <constraint firstItem="2n2-Ne-4st" firstAttribute="top" secondItem="Ari-g8-bwj" secondAttribute="bottom" constant="8" id="Atw-Vg-PRq"/>
+                            <constraint firstItem="Z9D-8E-1Rh" firstAttribute="top" secondItem="2n2-Ne-4st" secondAttribute="bottom" constant="8" id="FQn-le-SrO"/>
+                            <constraint firstItem="Ari-g8-bwj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="Gax-DY-64j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z9D-8E-1Rh" secondAttribute="trailing" constant="18" id="Ktw-Du-jG9"/>
+                            <constraint firstItem="Ari-g8-bwj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V6M-Or-5Mn"/>
+                            <constraint firstItem="2n2-Ne-4st" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="XMj-B4-vOJ"/>
+                            <constraint firstItem="cJB-b0-AAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="ZuS-1L-MCI"/>
+                            <constraint firstItem="Z9D-8E-1Rh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="aW5-rn-I9f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2n2-Ne-4st" secondAttribute="trailing" constant="18" id="bmg-Oa-h6I"/>
+                            <constraint firstItem="cJB-b0-AAx" firstAttribute="top" secondItem="Z9D-8E-1Rh" secondAttribute="bottom" constant="8" id="cmS-ic-vd1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJB-b0-AAx" secondAttribute="trailing" constant="18" id="pSs-ic-1Xd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="helpScreen" destination="hAC-O2-xIh" id="VR7-Ae-hkI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="c9u-tf-ejx">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="661"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hAC-O2-xIh">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="661"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9M-WH-Wqy">
+                                <rect key="frame" x="8" y="591" width="357" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.56862745100000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NFE-3A-gtZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeHelpScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OpV-H6-Zd1"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Sxf-Ha-tW8">
+                                <rect key="frame" x="12" y="204" width="349" height="253"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next screen will show you the Indian Cities" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTl-5u-0ei">
+                                        <rect key="frame" x="14" y="0.0" width="321" height="82"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="6Jo-My-HAj">
+                                        <rect key="frame" x="152" y="122" width="45" height="45"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glass" translatesAutoresizingMaskIntoConstraints="NO" id="EB0-O6-zzZ">
+                                        <rect key="frame" x="151.5" y="207" width="46" height="46"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="O9M-WH-Wqy" secondAttribute="bottom" constant="30" id="8Us-vh-R9O"/>
+                            <constraint firstItem="Sxf-Ha-tW8" firstAttribute="centerY" secondItem="hAC-O2-xIh" secondAttribute="centerY" id="Dxf-zc-u2X"/>
+                            <constraint firstItem="Sxf-Ha-tW8" firstAttribute="leading" secondItem="hAC-O2-xIh" secondAttribute="leading" constant="12" id="Goo-Zh-CNu"/>
+                            <constraint firstItem="Sxf-Ha-tW8" firstAttribute="centerX" secondItem="hAC-O2-xIh" secondAttribute="centerX" id="HD1-Re-oJc"/>
+                            <constraint firstAttribute="trailing" secondItem="Sxf-Ha-tW8" secondAttribute="trailing" constant="12" id="jqK-eL-a5y"/>
+                            <constraint firstAttribute="trailing" secondItem="O9M-WH-Wqy" secondAttribute="trailing" constant="8" id="m3K-8i-y5r"/>
+                            <constraint firstItem="O9M-WH-Wqy" firstAttribute="leading" secondItem="hAC-O2-xIh" secondAttribute="leading" constant="8" id="nNB-zO-SYE"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="45.176471710205078" height="45.176471710205078"/>
+        <image name="delhi" width="300" height="188"/>
+        <image name="glass" width="46.080001831054688" height="46.080001831054688"/>
+        <image name="indore" width="2544" height="1696"/>
+        <image name="mumbai" width="2560" height="1600"/>
+    </resources>
 </document>
